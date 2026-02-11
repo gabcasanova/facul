@@ -1,0 +1,42 @@
+header {
+  text-align: center;
+  font-weight: 300;
+  font-size: 36px;
+  margin: 0;
+  padding-bottom: 12px;
+  border-bottom: 3px solid black;
+}
+
+footer {
+  clear: both;
+  display: block;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 3px solid black;
+
+  text-align: center;
+  font-style: italic;
+  font-size: 22px;
+}
+
+section {
+  display: block;
+  float: right;
+  width: 100%;
+  height: fit-content;
+}
+
+.left {
+  float: left;
+  display: block;
+}
+
+.right {
+  float: right;
+  display: block;
+}
+
+.center {
+  text-align: center;
+  display: block;
+}
