@@ -1,0 +1,138 @@
+/* Importar fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stoke:wght@300;400&display=swap');
+
+/* Estilo geral */
+body {
+  background-color: #60A040;
+  color: #F0E090;
+  font-size: 16px;
+  font-family: 'Stoke', 'Lucida Bright', 'Liberation';
+}
+
+header {
+  display: block;
+  margin-bottom: 1px;
+}
+
+nav {
+  display: block;
+  width: 20%;
+  float: left;
+}
+
+section {
+  display: block;
+  width: 70%;
+  float: right;
+}
+
+a {
+  color: #F0E090;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #F0E080;
+}
+
+ol {
+  line-height: 200%;
+}
+
+ul {
+  line-height: 200%;
+}
+
+nav ul {
+  color: #F0E090;
+  line-height: 230%;
+  margin-top: 40px;
+  list-style-type: disc;
+}
+
+#ender {
+  float: right;
+  text-align: right;
+  line-height: 140%;
+  font-size: 14px;
+  font-family: 'Karla', 'Verdana', 'Ubuntu';
+}
+
+#logo-topo {
+  border-bottom: 5px solid #F0E090 ;
+}
+
+#titulo {
+  text-align: center;
+}
+
+.preco {
+  color: #C00000;
+}
+
+/* Página HOME */
+#apres {
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Página CUIDADOS */
+#listaCuida {
+  width: 380px;
+  color: #3366BB;
+  background-color: #FFFFBB;
+  padding: 10px;
+  border: 2px solid #000000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#listaCuida ul {
+  list-style-type: square;
+}
+#listaCuida ol {
+  list-style-type: lower-latin;
+}
+
+/* Página PRODUTOS */
+#tabProd {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 15px;
+  background-color: #FFFFFF;
+  color: #114499;
+  font-family: 'Karla','Verdana','Ubuntu';
+  margin: 6px auto auto auto;
+}
+
+#tabProd th, td {
+  border: 2px solid #000000;
+  padding: 6px 12px 6px 12px;
+}
+
+#tabProd .linTH {
+  color: #FFFFFF;
+  background-color: #0077BB;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#tabProd .colTH {
+  color: #FFFFFF;
+  background-color: #22AAEE;
+  text-align: left;
+}
+
+#tabProd .imgPet {
+  width: 40px;
+  height: 40px;
+}
+
+#tabProd .imgProd {
+  width: 90px;
+  height: 90px;
+}
+
