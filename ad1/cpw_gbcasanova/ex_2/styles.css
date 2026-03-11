@@ -136,3 +136,136 @@ nav ul {
   height: 90px;
 }
 
+/* Página COMPRAS */
+#divCompras {
+  width: 560px;
+  color: #2255AA;
+  background-color: #FFFFBB;
+  padding: 6px 6px 15px 6px;
+  font-size: 12px;
+  margin: 20px auto 20px auto;
+  border: 2px solid #000000;
+}
+
+#divCompras fieldset {
+  margin-top: 10px;
+}
+
+#divCompras fieldset input {
+  margin-bottom: 10px;
+}
+
+#divCompras fieldset textarea {
+  margin-bottom: 10px;
+}
+
+#divCompras #listaCompras {
+  width: 210px;
+  height: 160px;
+  float: right;
+  margin-top: 2px;
+  margin-left: 10px;
+}
+
+#divCompras #colLabSelProd {
+  width: 230px;
+  height: 40px;
+  float: left;
+}
+
+#divCompras #colSelProd {
+  width: 160px;
+  float: right;
+}
+
+#divCompras #linhaProdSel {
+  width: 220px;
+  margin-bottom: 6px;
+  float: left;
+}
+
+#divCompras .elemEsq {
+  display: block;
+  float: left;
+}
+
+#divCompras .elemDir {
+  display: block;
+  float: right;
+}
+
+#divCompras .botoes {
+  float: right;
+  margin: 20px 10px 0px 10px;
+}
+
+#divCompras .fsEsq {
+  float: right;
+  display: inline;
+  margin: 0px;
+} 
+
+#divCompras .impGrande {
+    width: 380px;
+}
+
+#divCompras .impMedio {
+    width: 80px;
+}
+
+#divCompras .impNCC {
+    width: 130px;
+}
+
+#divCompras .impTelef {
+    width: 90px;
+}
+
+#divCompras .impEnder {
+    width: 180px;
+    height: 50px;
+}
+
+#divCompras .numDD {
+    width: 30px;
+}
+
+#divCompras .numQD {
+    width: 50px;
+}
+
+#divCompras .divLinha {
+    width: 500px;
+    margin-bottom: 6px;
+    overflow: hidden; 
+}
+
+#divCompras .colLabCrd {
+    width: 260px;
+    height: 40px;
+    float: left;
+    text-align: left;
+}
+
+#divCompras .colPri {
+    width: 90px;
+    float: left;
+    display: block;
+}
+
+#divCompras .colPriCompras {
+    width: 86px;
+    float: left;
+    display: block;
+}
+
+#divCompras .colPriPag {
+    width: 70px;
+    float: left;
+    display: block;
+}
+
+#divCompras #enviar {
+  text-align: right;
+  margin: 10px;
+}

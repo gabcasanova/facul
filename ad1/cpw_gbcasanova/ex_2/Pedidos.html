@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Pedidos - Carrapet Patashop</title>
+  </head>
+
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <!-- Logotipo -->
+      <img id="logo-topo" alt="Carrapet Logo" src="img/CarrapetLogoTopo.png">
+
+      <!-- Endereço -->
+      <address id="ender">
+        Largo do Frajola, 23
+        <br/>
+        Tel: (21) 94321-1234
+        <br/>
+        contato@carrapet.com.br
+      </address>
+    </header>
+
+    <!-- Barra de Navegação -->
+    <nav>
+      <ul id="barra-navegacao">
+        <li><a href="index.html">Apresentação</a></li>
+        <li><a href="Cuidados.html">Cuidados</a></li>
+        <li><a href="Produtos.html">Produtos</a></li>
+        <li><a href="Pedidos.html">Pedidos</a></li>
+      </ul>
+    </nav>
+
+    <!-- Conteúdo da Página -->
+    <section>
+      <div id="divCompras">
+        <p>Compras</p>   
+        <fieldset>
+          <legend>Identificação</legend>
+          <label class="colPriCompras" for="nome">Nome:</label>
+          <input id="nome" class="impGrande" type="text"/>
+          <br/>
+
+          <label class="colPriCompras" for="email">Email:</label>
+          <input id="email" class="impGrande" type="text"/>
+          <br/>
+
+          <div class="elemEsq">
+            <label class="colPriCompras" for="endereco">Endereço:</label>
+            <textarea id="endereco" class="impEnder"></textarea>
+            <br/>
+
+            <label class="colPriCompras" for="telefone">Telefone:</label>
+            <input id="telefone" class="impTelef" type="text"/>
+            <br/>
+
+            <label class="colPriCompras" for="celular">Celular:</label>
+            <input id="celular" class="impTelef" type="text"/>
+            <br/>
+          </div>
+
+          <fieldset class="fsEsq">
+            <legend>Gênero:</legend>
+
+            <input id="mas" type="radio" name="sexo" value="mas" checked/>
+            <label for="mas">Mas</label>
+            <input id="fem" type="radio" name="sexo" value="fem"/>
+            <label for="fem">Mas</label>
+            <input id="outro" type="radio" name="sexo" value="outro"/>
+            <label for="outro">Outro</label>
+          </fieldset>
+
+          <fieldset class="fsEsq">
+            <legend>Nascimento:</legend>
+
+            <input type="number" class="numDD" id="dia" name="nasc" value="" min="1" max="31"/>
+            /
+            <input type="number" class="numDD" id="mes" name="nasc" value="" min="1" max="12"/>
+            /
+            <input type="number" class="numQD" id="mes" name="nasc" value="" min="1900" max="2999"/>
+          </fieldset>
+        </fieldset>
+
+        <fieldset>
+          <legend>Seleção de Produtos e Pagamento</legend>
+                    
+          <select name="produtos" id="produtos">
+            <option value="">-----</option>
+            
+            <optgroup label="Ração Cão">
+              <option value="pedigree">PEDIGREE Carne 10kg</option>
+              <option value="purina">Purina Alpo C&F 10kg</option>
+            </optgroup>
+
+            <optgroup label="Ração Gato">
+              <option value="granplus">GranPlus Choice C&F 10kg</option>
+            </optgroup>
+
+            <optgroup label="Brinquedo Cão">
+              <option value="jambo">JAMBO Osso Silicone</option>
+            </optgroup>
+          </select>
+
+          <button type="button">+</button>
+
+          <textarea class="elemDir" id="listaCompras" readonly></textarea>
+
+          <fieldset class="elemEsq">
+            <legend>Cartão</legend>
+
+            <label class="colPriPag" for="cartao">Endereço:</label>
+            <input id="visa" type="radio" name="cartao" value="visa" checked/>
+            <label for="visa">Visa</label>
+            <input id="master" type="radio" name="cartao" value="master"/>
+            <label for="master">Mastercard</label>
+            <input id="elo" type="radio" name="cartao" value="elo"/>
+            <label for="elo">Elo</label>
+            <br/>
+
+            <label class="colPriPag" for="validade">Validade:</label>
+            <input type="number" class="numDD" id="mes" name="val" value="" min="1" max="12"/>
+            /
+            <input type="number" class="numQD" id="mes" name="val" value="" min="1900" max="2999"/>
+            <br/>
+
+            <label class="colPriPag" for="numero">Número:</label>
+            <input id="celular" class="impNCC" type="text"/>
+            <br/>
+          </fieldset>
+
+          <div class="divLinha"></div>
+
+          <div class="elemDir">
+            <label for="valor">Valor R$:</label>
+            <input id="valor" class="impMedio" type="text" readonly/>
+          </div>
+        </fieldset>
+
+        <div id="enviar">
+          <input type="submit" value="Confirmar">
+          <input type="reset" value="Limpar">
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
