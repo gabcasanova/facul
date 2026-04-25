@@ -9,12 +9,9 @@
   </head>
 
   <body>
-    <!-- Cabeçalho -->
     <header>
-      <!-- Logotipo -->
       <img id="logo-topo" alt="Carrapet Logo" src="img/CarrapetLogoTopo.png">
 
-      <!-- Endereço -->
       <address id="ender">
         Largo do Frajola, 23
         <br/>
@@ -24,7 +21,6 @@
       </address>
     </header>
 
-    <!-- Barra de Navegação -->
     <nav>
       <ul id="barra-navegacao">
         <li><a href="index.html">Apresentação</a></li>
@@ -34,7 +30,6 @@
       </ul>
     </nav>
 
-    <!-- Conteúdo da Página -->
     <section>
       <div id="divCompras">
         <p>Compras</p>   
@@ -68,7 +63,7 @@
             <input id="mas" type="radio" name="sexo" value="mas" checked/>
             <label for="mas">Mas</label>
             <input id="fem" type="radio" name="sexo" value="fem"/>
-            <label for="fem">Mas</label>
+            <label for="fem">Fem</label>
             <input id="outro" type="radio" name="sexo" value="outro"/>
             <label for="outro">Outro</label>
           </fieldset>
@@ -78,9 +73,9 @@
 
             <input type="number" class="numDD" id="dia" name="nasc" value="" min="1" max="31"/>
             /
-            <input type="number" class="numDD" id="mes" name="nasc" value="" min="1" max="12"/>
+            <input type="number" class="numDD" id="mesNasc" name="nasc" value="" min="1" max="12"/>
             /
-            <input type="number" class="numQD" id="mes" name="nasc" value="" min="1900" max="2999"/>
+            <input type="number" class="numQD" id="anoNasc" name="nasc" value="" min="1900" max="2999"/>
           </fieldset>
         </fieldset>
 
@@ -104,14 +99,14 @@
             </optgroup>
           </select>
 
-          <button type="button">+</button>
+          <button onclick="adicionarProduto()" type="button">+</button>
 
           <textarea class="elemDir" id="listaCompras" readonly></textarea>
 
           <fieldset class="elemEsq">
             <legend>Cartão</legend>
 
-            <label class="colPriPag" for="cartao">Endereço:</label>
+            <label class="colPriPag" for="bandeira">Bandeira:</label>
             <input id="visa" type="radio" name="cartao" value="visa" checked/>
             <label for="visa">Visa</label>
             <input id="master" type="radio" name="cartao" value="master"/>
@@ -121,29 +116,35 @@
             <br/>
 
             <label class="colPriPag" for="validade">Validade:</label>
-            <input type="number" class="numDD" id="mes" name="val" value="" min="1" max="12"/>
+            <input type="number" class="numDD" id="mesVal" name="val" value="" min="1" max="12"/>
             /
-            <input type="number" class="numQD" id="mes" name="val" value="" min="1900" max="2999"/>
+            <input type="number" class="numQD" id="anoVal" name="val" value="" min="1900" max="2999"/>
             <br/>
 
             <label class="colPriPag" for="numero">Número:</label>
-            <input id="celular" class="impNCC" type="text"/>
+            <input id="numCartao" class="impNCC" type="text"/>
             <br/>
           </fieldset>
+
+          <br/>
+          <label class="colPriPag" for="cpf">CPF:</label>
+          <input id="cpf" class="impNCC" type="text" onchange="validarCPF()"/>
 
           <div class="divLinha"></div>
 
           <div class="elemDir">
             <label for="valor">Valor R$:</label>
-            <input id="valor" class="impMedio" type="text" readonly/>
+            <input id="valor" class="impMedio" type="text" value="0" readonly/>
           </div>
         </fieldset>
 
         <div id="enviar">
-          <input type="submit" value="Confirmar">
+          <input type="submit" value="Comprar">
           <input type="reset" value="Limpar">
         </div>
       </div>
     </section>
   </body>
+
+  <script src="script.js"></script>
 </html>
