@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Cuidados - Carrapet Patashop</title>
+  </head>
+
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <!-- Logotipo -->
+      <img id="logo-topo" alt="Carrapet Logo" src="img/CarrapetLogoTopo.png">
+
+      <!-- Endereço -->
+      <address id="ender">
+        Largo do Frajola, 23
+        <br/>
+        Tel: (21) 94321-1234
+        <br/>
+        contato@carrapet.com.br
+      </address>
+    </header>
+
+    <!-- Barra de Navegação -->
+    <nav>
+      <ul id="barra-navegacao">
+        <li><a href="index.html">Apresentação</a></li>
+        <li><a href="Cuidados.html">Cuidados</a></li>
+        <li><a href="Produtos.html">Produtos</a></li>
+        <li><a href="Pedidos.html">Pedidos</a></li>
+      </ul>
+    </nav>
+
+    <!-- Conteúdo da Página -->
+    <section>
+      <p id="titulo">Cuidados para seu Cão</p>
+      <div id="listaCuida">
+        <ul>
+          <li>Banho</li>
+          <ol>
+            <li>
+              <a href="#" onclick="abrirJanela('banhoCaoPequeno')">
+                Pequeno (R$ <span class="preco">60,00</span>)
+              </a>
+            </li>
+
+            <li>
+              <a href="#" onclick="abrirJanela('banhoCaoMedio')">
+                Médio (R$ <span class="preco">80,00</span>)
+              </a>
+            </li>
+
+            <li>
+              <a href="#" onclick="abrirJanela('banhoCaoGrande')">
+                Grande (R$ <span class="preco">120,00</span>)
+              </a>
+            </li>
+          </ol>
+        </ul>
+
+        <ul>
+          <li>Tosa</li>
+          <ol>
+            <li>
+              <a href="#" onclick="abrirJanela('TosaCaoPequeno')">
+                Pequeno (R$ <span class="preco">85,00</span>)
+              </a>
+            </li>
+
+            <li>
+              <a href="#" onclick="abrirJanela('TosaCaoMedio')">
+                Médio (R$ <span class="preco">100,00</span>)
+              </a>
+            </li>
+
+            <li>
+              <a href="#" onclick="abrirJanela('TosaCaoGrande')">
+                Grande (R$ <span class="preco">160,00</span>)
+              </a>
+            </li>
+          </ol>
+        </ul>
+
+        <ul>
+          <li>Pulgas e/ou Carrapatos</li>
+          <ol>
+            <li>
+              <a href="#" onclick="abrirJanela('Nivel1')">
+                Nível 1
+              </a>
+            </li>
+
+            <li>
+              <a href="#" onclick="abrirJanela('Nivel2')">
+                Nível 2
+              </a>
+            </li>
+
+            <li>
+              <a href="#" onclick="abrirJanela('Nivel3')">
+                Nível 3
+              </a>
+            </li>
+          </ol>
+        </ul>
+      </div>
+    </section>
+
+    <!-- JANELAS -->
+
+    <!-- Banhos -->
+    <div id="banhoCaoPequeno" class="janModal">
+        <div class="janCuida">
+          <h1>Banho</h1>
+          <h3>Cão Pequeno</h3>
+          <img src="img/Pequeno150.png" alt="Cão Pequeno"/>
+          <p class="preco">R$60</p>
+          <button onclick="fecharJanela('banhoCaoPequeno')">Fechar</button>
+        </div>
+    </div>
+
+    <div id="banhoCaoMedio" class="janModal">
+        <div class="janCuida">
+          <h1>Banho</h1>
+          <h3>Cão Médio</h3>
+          <img src="img/Medio150.png" alt="Cão Médio"/>
+          <p class="preco">R$80</p>
+          <button onclick="fecharJanela('banhoCaoMedio')">Fechar</button>
+        </div>
+    </div>
+
+    <div id="banhoCaoGrande" class="janModal">
+        <div class="janCuida">
+          <h1>Banho</h1>
+          <h3>Cão Grande</h3>
+          <img src="img/Grande150.png" alt="Cão Grande"/>
+          <p class="preco">R$120</p>
+          <button onclick="fecharJanela('banhoCaoGrande')">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Tosa -->
+    <div id="TosaCaoPequeno" class="janModal">
+        <div class="janCuida">
+          <h1>Tosa</h1>
+          <h3>Cão Pequeno</h3>
+          <img src="img/Pequeno150.png" alt="Cão Pequeno"/>
+          <p class="preco">R$85</p>
+          <button onclick="fecharJanela('TosaCaoPequeno')">Fechar</button>
+        </div>
+    </div>
+
+    <div id="TosaCaoMedio" class="janModal">
+        <div class="janCuida">
+          <h1>Tosa</h1>
+          <h3>Cão Médio</h3>
+          <img src="img/Medio150.png" alt="Cão Médio"/>
+          <p class="preco">R$100</p>
+          <button onclick="fecharJanela('TosaCaoMedio')">Fechar</button>
+        </div>
+    </div>
+
+    <div id="TosaCaoGrande" class="janModal">
+        <div class="janCuida">
+          <h1>Tosa</h1>
+          <h3>Cão Grande</h3>
+          <img src="img/Grande150.png" alt="Cão Grande"/>
+          <p class="preco">R$160</p>
+          <button onclick="fecharJanela('TosaCaoGrande')">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Carrapatos -->
+    <div id="Nivel1" class="janModal">
+        <div class="janCuida">
+          <h1>Desinfestação</h1>
+          <h3>Nível 1</h3>
+          <img src="img/Nivel1_150.png" alt="Carrapatos"/>
+          <p class="preco">R$5</p>
+          <button onclick="fecharJanela('Nivel1')">Fechar</button>
+        </div>
+    </div>
+
+    <div id="Nivel2" class="janModal">
+        <div class="janCuida">
+          <h1>Desinfestação</h1>
+          <h3>Nível 2</h3>
+          <img src="img/Nivel2_150.png" alt="Carrapatos"/>
+          <p class="preco">R$10</p>
+          <button onclick="fecharJanela('Nivel2')">Fechar</button>
+        </div>
+    </div>
+
+    <div id="Nivel3" class="janModal">
+        <div class="janCuida">
+          <h1>Desinfestação</h1>
+          <h3>Nível 3</h3>
+          <img src="img/Nivel3_150.png" alt="Carrapatos"/>
+          <p class="preco">R$20</p>
+          <button onclick="fecharJanela('Nivel3')">Fechar</button>
+        </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
