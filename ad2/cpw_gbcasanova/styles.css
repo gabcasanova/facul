@@ -134,6 +134,23 @@ nav ul {
   text-align: left;
 }
 
+#tabProd td {
+  text-align: center;
+}
+
+#tabProd td a {
+  color: #114499;
+}
+
+#tabProd td a:visited {
+  color: #114499;
+}
+
+.desc {
+  width: 200px;
+  text-align: center;
+}
+
 #tabProd .imgPet {
   width: 40px;
   height: 40px;

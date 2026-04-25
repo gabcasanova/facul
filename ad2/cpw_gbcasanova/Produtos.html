@@ -45,56 +45,36 @@
           <th class="linTH">Tipo</th>
           <th class="linTH">Pet</th>
           <th class="linTH">Descrição</th>
-          <th class="linTH">Imagem</th>
-          <th class="linTH">Preço</th>
         </tr>
 
         <!-- Lista de Produtos -->
         <tr>
           <td rowspan="3" class="colTH">Ração</td>
-          <td><img class="imgPet" src="img/Cao40.png"/></td>
-          <td>
-            PEDIGREE<br/>
-            Carne<br/>
-            10kg
+          <td><img class="imgPet" src="img/Cao40.png"/><br/><a href="#" onclick="mudarDescricao('pedigree')">Carne</a></td>
+
+          <td rowspan="4" class="desc">
+            <h2 id="descTitulo"></h1>
+            <img id="descImagem" src="img/vazio_150.png">
+            <p id="descSabor"></p>
+            <p id="descPeso"></p>
+            <p><span id="valorPreco" class="preco"></span></p>
           </td>
-          <td><img class="imgProd" src="img/RaçãoPedigree90.jpg"/></td>
-          <td><span class="preco">R$ 100,00</span></td>
         </tr>
 
         <tr>
-          <td><img class="imgPet" src="img/Cao40.png"/></td>
-          <td>
-            Purina Aipo<br/>
-            Carne e Frango<br/>
-            10kg
-          </td>
-          <td><img class="imgProd" src="img/RaçãoAipo90.jpg"/></td>
-          <td><span class="preco">R$ 1300,00</span></td>
+          <td><img class="imgPet" src="img/Cao40.png"/><br/><a href="#" onclick="mudarDescricao('aipo')">Carne e Frango</a></td>
         </tr>
 
         <tr>
-          <td><img class="imgPet" src="img/Gato40.png"/></td>
-          <td>
-            GranPlus Choice<br/>
-            Frango e Carne<br/>
-            10kg
-          </td>
-          <td><img class="imgProd" src="img/RaçãoGranPlus90.jpg"/></td>
-          <td><span class="preco">R$ 1300,00</span></td>
+          <td><img class="imgPet" src="img/Gato40.png"/><br/><a href="#" onclick="mudarDescricao('gran')">Carne e Frango</a></td>
         </tr>
 
         <td rowspan="1" class="colTH">Brinquedo</td>
-          <td><img class="imgPet" src="img/Cao40.png"/></td>
-          <td>
-            JAMBO PET<br/>
-            Osso Silicone<br/>
-            sabor Frango
-          </td>
-          <td><img class="imgProd" src="img/BrinquedoJambo90.jpg"/></td>
-          <td><span class="preco">R$ 25,00</span></td>
+          <td><img class="imgPet" src="img/Cao40.png"/><br/><a href="#" onclick="mudarDescricao('osso')">Osso Silicone</a></td>
         </tr>
       </table>
     </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
